@@ -5,35 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="menu_bar.css">
-  <script src="menu_bar.js"></script>
   <script src="https://kit.fontawesome.com/6cab8b27af.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Document</title>
-  <script>
-    let product_ = ['고속계량라벨부착기', 'WM-AISP + PS-AI Series', 'WM-AISP Series', 'UNI-5L Series', 'UNI-CAP Series'];
-    let img_ = ["고속계량라벨부착기.jpg", "WM-AISP+PS-AI_Series.jpg", "WM-AISP_Series.jpg",  "UNI-5L_Series.jpg", "UNI-CAP_Series-4.jpg"];
-    let product_price = ['35,000원', '40,000원', '50,000원', '70,000원', '80,000원']
-    let product_con = ['빠른 속도와 최첨단 기술을 사용한 라벨부착기','제조 라인형 자동Wrap포장기기', '계량, Wrap포장, 라벨부착. 3가지 작업을 한번에 해결','보급형 라벨프린팅 저울', '고급형 라벨프린팅저울.'];
-    $(document).ready(function() {
-      for (let i = 0; i < 3; i++) {
-        let html_temp = `
-        <div class="product-list">
-    <div class="product-box${i+1}" style="width: 220px; height: 400px; margin: 16.5px; border: 1px solid rgba(0, 0, 0, 0.2);" ><a href="product_${i+1}.html">
-      <div class="img-box">
-        <img src=${img_[i]} alt="">
-      </div>
-      <div class="text-box">
-        <div class="product_name" style="text-align : center;">${product_[i]}</div>
-        <div class="product_price" style="text-align : center;">${product_price[i]}</div>
-        <div class= "product_con">${product_con[i]}</div>
-      </div></a>
-    </div>
-  </div>
-          `
-        $("#name-list").append(html_temp)
-      }
-    })
-  </script>
+  <script src="index_2.js"></script>
+  <script src="menu_bar.js"></script>
+  <script src="footer_.js"></script>
+  <script src="img_change.js"></script>
 </head>
 <body>
   <div class="profile">
@@ -48,52 +26,13 @@
       <li><a href="index.html">title</a></li>
     </ul>
   </div>
-  <div class="menu_bar">
-    <ul class="bagic_menu">
-      <div class="dropdown">
-        <div class="dropbtn"><a href="index_1.html">전자저울</a></div>
-        <!-- <div class="dropdown-content">
-          <a href="product_1.html">1</a>
-          <a href="product_2.html">2</a>
-          <a href="#">3</a>
-        </div> -->
-      </div>
-      <div class="dropdown">
-        <div class="dropbtn"><a href="index2.html">포장기계</a></div>
-        <!-- <div class="dropdown-content">
-          <a href="product_1.html">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-        </div> -->
-      </div>
-      <div class="dropdown">
-        <div class="dropbtn"><a href="index_3.html">라벨/기타</a></div>
-        <!-- <div class="dropdown-content">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-        </div> -->
-      </div>
-      <div class="dropdown">
-        <div class="dropbtn"><a href="index_4.html">중고</a></div>
-        <!-- <div class="dropdown-content">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-        </div> -->
-      </div>
-    </ul>
-    <!-- <div class="search">
-      <input type="text">
-    </div> -->
-    <ul class="cafe">
-      <li><a href="#">naver_cafe</a></li>
-    </ul>
+  <div class="menu_bar" id="menu_">
+  
   </div>
 
   <!-- 위에까지 기본적인 네비게이션 -->
   <div class="recommended_list">
-    -추천-
+    -추천 상품-
   </div>
 
 
@@ -101,35 +40,8 @@
   </div>
   <!-- 기업소개 및 약정 -->
 
-  <div class="footer">
-    <div class="main_footer">
-      <div class="company">
-        <a href="#">기업소개</a>
-      </div>
-      <div class="representative">
-        대표이사 : 이명우
-      </div>
-    </div>
-    <div class="cs">
-      <div class="cs_center">cs center</div>
-      <div>
-        <li>문의사항</li>
-        <li>010-1111-1111</li>
-      </div>
-      <div>
-        <li>문의시간</li>
-        <li>월~토</li>
-        <li>09:00 ~ 18:00</li>
-      </div>
-      <div><li><a href="https://open.kakao.com/o/sAKQqn8d">카카오톡 문의</a></li></div>
-    </div>
-    <div class="bank_info">
-      <div>bank info</div>
-      <div class="bank_number">
-        <li>농협</li>
-        <li>110-110392031</li>
-      </div>
-    </div>
+  <div class="footer" id="foot">
+
   </div>
 </body>
 
